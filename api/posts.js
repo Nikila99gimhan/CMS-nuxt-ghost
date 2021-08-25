@@ -12,4 +12,7 @@ export  async function getPost() {
         limit: "all",
         include:"tags,authors"
     })
+    .catch(err => {
+        console.error(err);
+    })
 }
