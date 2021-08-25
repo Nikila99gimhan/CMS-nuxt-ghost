@@ -1,7 +1,15 @@
 import GhostContentAPI from "@tryghost/content-api";
 
 const api = new GhostContentAPI({
-    url: 'https://ghostcms-nuxt.herokuapp.com',
-    key: '61267d9a3518ca001db77fca:e9a28215f637e7bcc3b20cd70b5f98b0a1c95777c21f5e9954c8563a185c0860',
+    url: 'https://nikilablog.herokuapp.com',
+    key: '9d9bb29ec44fdee8bb342b9364',
     version: "v2"
 });
+
+export  async function getPost() {
+    return await api.posts
+    .browse({
+        limit: "all",
+        include:"tags,authors"
+    })
+}
