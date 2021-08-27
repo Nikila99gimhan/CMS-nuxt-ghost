@@ -1,13 +1,29 @@
 <template>
     <div>
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <nuxt-link to='/' class="logo" >Nikila Fernando</nuxt-link>
+                    
+                    <nav>
+                        <ul>
+                            <li><nuxt-link to="/who">Who?</nuxt-link></li>
+                            <li><nuxt-link to="/posts">Posts</nuxt-link></li>
+                            <li><nuxt-link to="/who">Contact</nuxt-link></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-
+        </header>
         <nuxt />
     </div>
 </template>
 
 
+
 <style lang="scss">
+
 html {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 16px;
