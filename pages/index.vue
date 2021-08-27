@@ -19,20 +19,26 @@
 </template>
 
 <script>
-import { getPost } from '~/api/posts';
+import { getPosts } from '~/api/posts';
 export default {
   async asyncData () {
-    const post = await getPost();
-    return { post: post }
+    const posts = await getPosts();
+    return { posts }
   }
 }
 </script>
 
-<styel>
-
-.container{
-  margin:0 auto;
-  min-height:100vh;
+<style>
+.contanier{
+  margin: 0 auto;
+  min-height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-</styel>
 
+
+
+
+</style>
