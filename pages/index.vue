@@ -28,17 +28,5 @@ export default {
 }
 </script>
 
-<style>
-.contanier{
-  margin: 0 auto;
-  min-height: 100hv;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 
-
-
-</style>
